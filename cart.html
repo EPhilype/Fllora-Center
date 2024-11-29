@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Flora Center</title>
+    <link rel="stylesheet" href="cart css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Flora Center</h1>
+            <p>Flores Tropicais de Aldeia, Pernambuco</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tropical.html">Flores Tropicais</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="cart.html">Carrinho</a></li>
+                <li><a href="Login Flora.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-bar" action="search.html" method="get">
+            <input type="text" name="query" placeholder="Pesquisar flores..." aria-label="Pesquisar" id="search-placeholder">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
+
+
+    </header>
+
+    <section class="cart">
+        <h2>Carrinho de Compras</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <!-- Os itens do carrinho serão inseridos aqui via JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <p><strong>Total:</strong> R$ <span id="totalPrice">0,00</span></p>
+            <button onclick="finalizePurchase()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Flora Center. Todos os direitos reservados.</p>
+        <p>Endereço: Aldeia, Camaragibe - PE, CEP 54783-000</p>
+        <p><a href="contato.html" target="_blank" style="color: white; text-decoration: underline;">Contato</a></p>
+    </footer>
+
+    <script src="cart jv.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Center - Loja de Flores Tropicais</title>
+    <link rel="stylesheet" href="Flora Center CSS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Flora Center</h1>
+            <p>Flores Tropicais</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="tropical.html">Flores Tropicais</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="cart.html">Carrinho</a></li>
+                <li><a href="Login Flora.html">Login</a></li>
+            </ul>
+        </nav>
+        <!-- Barra de Pesquisa -->
+        <form class="search-bar" action="search.html" method="get">
+            <input type="text" name="query" placeholder="Pesquisar flores..." aria-label="Pesquisar">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <section class="promo">
+        <h2 id="promo-title">Promoções Especiais</h2>
+        <div class="promo-items">
+            <div class="promo-item">
+                <img src="https://media.istockphoto.com/id/970006598/pt/foto/heliconia-bihai-flower-with-leaf-tropical-flowers-isolated-on-white-background-with-clipping.jpg?s=612x612&w=0&k=20&c=u144uY18Rd4hTiPfQsfnp6YGVA15yemf9utZlzBlW0c=" alt="Flor 1">
+                <p id="promo-price-1">R$ 29,99</p>
+                <button onclick="addToCart('Flor 1', 29.99)" id="promo-button-1">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="https://www.floriculturasp.com.br/florimagens/produtos/ad0efad9dd0abaec4b8f9aaa489ec2f1.jpg.webp" alt="Flor 2">
+                <p id="promo-price-2">R$ 19,99</p>
+                <button onclick="addToCart('Flor 2', 19.99)" id="promo-button-2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="https://cdn.awsli.com.br/2500x2500/2081/2081818/produto/141163507/79383a22fa.jpg" alt="Flor 3">
+                <p id="promo-price-3">R$ 49,99</p>
+                <button onclick="addToCart('Flor 3', 49.99)" id="promo-button-3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 4.jpg">
+                <p id="promo-price-4">R$ 49,99</p>
+                <button onclick="addToCart('Flor 4', 49.99)" id="promo-button-4">Adicionar ao Carrinho</button>
+            </div>
+           <div class="promo-item">
+                 <img src="imagens/Flores/Flor 5.jpg">
+                 <p id="promo-price-5">R$ 29,99</p>
+                <button onclick="addToCart('Flor 5', 29.99)" id="promo-button-5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 6.jpg">
+                <p id="promo-price-6">R$ 19,99</p>
+                <button onclick="addToCart('Flor 6, 19.99')" id="promo-button-6">Adicionar ao Carrinho</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="more-options">
+        <h2 id="more-options-title" style="color: green; text-align: center;">Mais Opções de Flores</h2>
+        <div class="more-options-items">
+            <div class="more-option-item">
+                <img src="imagens/Flores/Flor 7.jpg" alt="Flor 7">
+                <p id="more-option-price-7">R$ 39,99</p>
+                <button onclick="addToCart('Flor 7', 39.99)" id="more-option-button-7">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 8.jpg" alt="Flor 8">
+                <p id="more-option-price-2">R$ 34,99</p>
+                <button onclick="addToCart('Flor 8', 34.99)" id="more-option-button-2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 9.jpg" alt="Flor 9">
+                <p id="more-option-price-3">R$ 39,99</p>
+                <button onclick="addToCart('Flor 9', 39.99)" id="more-option-button-3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 10.jpg" alt="Flor 10">
+                <p id="more-option-price-4">R$ 29,99</p>
+                <button onclick="addToCart('Flor 10', 29.99)" id="more-option-button-4">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 11.jpeg" alt="Flor 11">
+                <p id="more-option-price-5">R$ 44,99</p>
+                <button onclick="addToCart('Flor 11', 44.99)" id="more-option-button-5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 12.jpg" alt="Flor 12">
+                <p id="more-option-price-6">R$ 19,99</p>
+                <button onclick="addToCart('Flor 12', 19.99)" id="more-option-button-6">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Flora Center. Todos os direitos reservados.</p>
+        <p>Endereço: Aldeia, Camaragibe - PE, CEP 54783-000</p>
+        <p><a href="contato.html" target="_blank" style="color: white; text-decoration: underline;">Contato</a></p>
+    </footer>
+    
+    <!-- Botão do Chat -->
+    <div class="chat-button" onclick="openChat()">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chat Bot">
+    </div>
+
+    <script>
+        // Função para abrir o chat
+        function openChat() {
+            alert("Bem-vindo ao atendimento da Flora Center! Como podemos ajudá-lo?");
+        }
+    </script>
+</body>
+</html>

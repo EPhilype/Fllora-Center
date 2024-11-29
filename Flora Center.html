@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Flora Center - Loja de Flores Tropicais</title>
+    <link rel="stylesheet" href="Flora Center CSS.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Botões de Idioma -->
+        <div class="language-switcher">
+            <button onclick="changeLanguage('pt')" class="language-btn">
+                <img src="imagens/bandeiradobrasil.jpeg" alt="Português" class="language-flag">
+            </button>
+            <button onclick="changeLanguage('en')" class="language-btn">
+                <img src="imagens/bandeiradoseua.png" alt="English" class="language-flag">
+            </button>
+        </div>
+    
+        <div class="logo">
+            <h1 id="logo-title">Flora Center</h1>
+            <p id="logo-subtitle">Flores Tropicais</p>
+        </div>
+
+        
+        <nav>
+            <ul>
+                <li><a href="Index.html" id="nav-home">Início</a></li>
+                <li><a href="tropical.html" id="nav-tropical">Flores Tropicais</a></li>
+                <li><a href="promocoes.html" id="nav-promotions">Promoções</a></li>
+                <li>
+                    <a href="cart.html" id="nav-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Login Flora.html" id="nav-login">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <form class="search-bar" action="search.html" method="get">
+            <input type="text" name="query" placeholder="Pesquisar flores..." aria-label="Pesquisar" id="search-placeholder">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
+    </header>
+    
+
+    <section class="promo">
+        <h2 id="promo-title">Promoções Especiais</h2>
+        <div class="promo-items">
+            <div class="promo-item">
+                <img src="https://media.istockphoto.com/id/970006598/pt/foto/heliconia-bihai-flower-with-leaf-tropical-flowers-isolated-on-white-background-with-clipping.jpg?s=612x612&w=0&k=20&c=u144uY18Rd4hTiPfQsfnp6YGVA15yemf9utZlzBlW0c=" alt="Flor 1">
+                <p id="promo-price-1">R$ 29,99</p>
+                <button onclick="addToCart('Flor 1', 29.99)" id="promo-button-1">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="https://www.floriculturasp.com.br/florimagens/produtos/ad0efad9dd0abaec4b8f9aaa489ec2f1.jpg.webp" alt="Flor 2">
+                <p id="promo-price-2">R$ 19,99</p>
+                <button onclick="addToCart('Flor 2', 19.99)" id="promo-button-2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="https://cdn.awsli.com.br/2500x2500/2081/2081818/produto/141163507/79383a22fa.jpg" alt="Flor 3">
+                <p id="promo-price-3">R$ 49,99</p>
+                <button onclick="addToCart('Flor 3', 49.99)" id="promo-button-3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 4.jpg">
+                <p id="promo-price-4">R$ 49,99</p>
+                <button onclick="addToCart('Flor 4', 49.99)" id="promo-button-4">Adicionar ao Carrinho</button>
+            </div>
+           <div class="promo-item">
+                 <img src="imagens/Flores/Flor 5.jpg">
+                 <p id="promo-price-5">R$ 29,99</p>
+                <button onclick="addToCart('Flor 5', 29.99)" id="promo-button-5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 6.jpg">
+                <p id="promo-price-6">R$ 19,99</p>
+                <button onclick="addToCart('Flor 6, 19.99')" id="promo-button-6">Adicionar ao Carrinho</button>
+            </div>
+
+
+        </div>
+    </section>
+  
+    <section class="more-options">
+        <h2 id="more-options-title" style="color: green; text-align: center;">Mais Opções de Flores</h2>
+        <div class="more-options-items">
+            <div class="more-option-item">
+                <img src="imagens/Flores/Flor 7.jpg" alt="Flor 7">
+                <p id="more-option-price-7">R$ 39,99</p>
+                <button onclick="addToCart('Flor 7', 39.99)" id="more-option-button-7">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 8.jpg" alt="Flor 8">
+                <p id="more-option-price-2">R$ 34,99</p>
+                <button onclick="addToCart('Flor 8', 34.99)" id="more-option-button-2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 9.jpg" alt="Flor 9">
+                <p id="more-option-price-3">R$ 39,99</p>
+                <button onclick="addToCart('Flor 9', 39.99)" id="more-option-button-3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 10.jpg" alt="Flor 10">
+                <p id="more-option-price-4">R$ 29,99</p>
+                <button onclick="addToCart('Flor 10', 29.99)" id="more-option-button-4">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 11.jpeg" alt="Flor 11">
+                <p id="more-option-price-5">R$ 44,99</p>
+                <button onclick="addToCart('Flor 11', 44.99)" id="more-option-button-5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="promo-item">
+                <img src="imagens/Flores/Flor 12.jpg" alt="Flor 12">
+                <p id="more-option-price-6">R$ 19,99</p>
+                <button onclick="addToCart('Flor 12', 19.99)" id="more-option-button-6">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+        
+    <footer>
+        <p id="footer-text"> &copy; 2024 Flora Center. Todos os direitos reservados.</p>
+        <p id="footer-address">Endereço: Aldeia, Camaragibe - PE, CEP 54783-000</p>
+        <p><a href="contato.html" target="_blank" id="footer-contact" style="color: white; text-decoration: underline;">Contato</a></p>
+    </footer>
+
+    <div class="chat-button" onclick="openChat()">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chat Bot">
+    </div>
+
+    <script>
+        // Função para mudar o idioma
+        function changeLanguage(language) {
+            if(language === 'pt') {
+                // Mudar para português
+                document.getElementById('title').textContent = "Flora Center - Loja de Flores Tropicais";
+                document.getElementById('logo-title').textContent = "Flora Center";
+                document.getElementById('logo-subtitle').textContent = "Flores Tropicais";
+                document.getElementById('nav-home').textContent = "Início";
+                document.getElementById('nav-tropical').textContent = "Flores Tropicais";
+                document.getElementById('nav-promotions').textContent = "Promoções";
+                document.getElementById('nav-cart').textContent = "Carrinho";
+                document.getElementById('nav-login').textContent = "Login";
+                document.getElementById('search-placeholder').placeholder = "Pesquisar flores...";
+                document.getElementById('search-button').textContent = "Buscar";
+                document.getElementById('promo-title').textContent = "Promoções Especiais";
+                document.getElementById('promo-price-1').textContent = "R$ 29,99";
+                document.getElementById('promo-button-1').textContent = "Adicionar ao Carrinho";
+                document.getElementById('promo-price-2').textContent = "R$ 19,99";
+                document.getElementById('promo-button-2').textContent = "Adicionar ao Carrinho";
+                document.getElementById('promo-price-3').textContent = "R$ 49,99";
+                document.getElementById('promo-button-3').textContent = "Adicionar ao Carrinho";
+                document.getElementById('footer-text').textContent = "&copy; 2024 Flora Center. Todos os direitos reservados.";
+                document.getElementById('footer-address').textContent = "Endereço: Aldeia, Camaragibe - PE, CEP 54783-000";
+                document.getElementById('footer-contact').textContent = "Contato";
+            } else if(language === 'en') {
+                // Mudar para inglês
+                document.getElementById('title').textContent = "Flora Center - Tropical Flower Shop";
+                document.getElementById('logo-title').textContent = "Flora Center";
+                document.getElementById('logo-subtitle').textContent = "Tropical Flowers";
+                document.getElementById('nav-home').textContent = "Home";
+                document.getElementById('nav-tropical').textContent = "Tropical Flowers";
+                document.getElementById('nav-promotions').textContent = "Promotions";
+                document.getElementById('nav-cart').textContent = "Cart";
+                document.getElementById('nav-login').textContent = "Login";
+                document.getElementById('search-placeholder').placeholder = "Search flowers...";
+                document.getElementById('search-button').textContent = "Search";
+                document.getElementById('promo-title').textContent = "Special Promotions";
+                document.getElementById('promo-price-1').textContent = "$5.99";
+                document.getElementById('promo-button-1').textContent = "Add to Cart";
+                document.getElementById('promo-price-2').textContent = "$3.99";
+                document.getElementById('promo-button-2').textContent = "Add to Cart";
+                document.getElementById('promo-price-3').textContent = "$10.99";
+                document.getElementById('promo-button-3').textContent = "Add to Cart";
+                document.getElementById('footer-text').textContent = "&copy; 2024 Flora Center. All rights reserved.";
+                document.getElementById('footer-address').textContent = "Address: Aldeia, Camaragibe - PE, ZIP 54783-000";
+                document.getElementById('footer-contact').textContent = "Contact";
+            }
+        }
+
+        function openChat() {
+            alert("Welcome to Flora Center's support chat!");
+        }
+    </script>
+<script>let cart = []; // Array para armazenar os itens do carrinho
+
+    function addToCart(itemName, itemPrice) {
+        const newItem = { name: itemName, price: itemPrice };
+        cart.push(newItem);
+    
+        alert(`${itemName} foi adicionado ao carrinho por R$ ${itemPrice.toFixed(2)}.`);
+        console.log(cart); // Para fins de depuração no console
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Para garantir que os botões fiquem dentro do header */
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância do canto direito */
+    display: flex;
+    gap: 10px; /* Espaçamento entre as bandeiras */
+    z-index: 10; /* Certifica-se de que fique acima de outros elementos */
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.language-flag {
+    width: 30px; /* Largura da bandeira */
+    height: 20px; /* Altura da bandeira */
+    object-fit: cover;
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    transition: transform 0.2s ease;
+}
+
+.language-btn:hover .language-flag {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Ajustando o header para não interferir */
+header {
+    position: relative;
+    padding: 20px;
+}
+
+
+/* Logo e Menu */
+header .logo {
+    margin-bottom: 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffbf00;
+}
+
+/* Promoções */
+.promo {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.promo h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2d6a4f;
+}
+
+.promo-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promo-item {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.promo-item:hover {
+    transform: scale(1.05);
+}
+
+.promo-item img {
+    max-width: 90%;
+    border: 2px solid #2d6a4f;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.promo-item p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.promo-item button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-item button:hover {
+    background-color: #ffbf00;
+}
+
+/* Container principal de promoções e mais opções */
+.promo-items, .more-options-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens */
+    align-items: start; /* Alinha os itens ao topo */
+    padding: 20px 0;
+}
+
+/* Estilo dos itens (flores) */
+.promo-item, .more-option-item {
+    width: 200px; /* Tamanho fixo para uniformizar */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 10px;
+}
+
+/* Imagem dentro do item */
+.promo-item img, .more-option-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botão de adicionar ao carrinho */
+.promo-item button, .more-option-item button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #28a745; /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.promo-item button:hover, .more-option-item button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Container principal de promoções e mais opções */
+.promo-items, .more-options-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas uniformes e responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens */
+    align-items: start; /* Alinha os itens ao topo */
+    padding: 20px 0;
+}
+
+/* Estilo dos itens (flores) */
+.promo-item, .more-option-item {
+    width: 200px; /* Largura fixa para uniformizar */
+    height: 300px; /* Altura fixa para todos os itens */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Para alinhar imagem, texto e botão verticalmente */
+    justify-content: space-between; /* Espaçamento uniforme interno */
+}
+
+/* Imagem dentro do item */
+.promo-item img, .more-option-item img {
+    width: 100%;
+    height: 150px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem para caber no espaço sem deformar */
+    border-radius: 8px;
+}
+
+/* Preço e Botão */
+.promo-item p, .more-option-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.promo-item button, .more-option-item button {
+    margin-top: auto;
+    padding: 10px 15px;
+    color: white;
+    background-color: #28a745; /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.promo-item button:hover, .more-option-item button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+
+
+/* Centralizar e aplicar cor ao título */
+.section-title {
+    text-align: center;
+    color: #2d6a4f; /* Substitua pelo código de cor exato, se necessário */
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Botão de Chat */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2d6a4f;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: #ffbf00;
+}
+
+.chat-button img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: gold; /* Cor alterada para amarelo */
+    color: black; /* Ajusta o texto para contraste */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #2d6a4f; /* Amarelo mais escuro ao passar o mouse */
+}
+
+
+
